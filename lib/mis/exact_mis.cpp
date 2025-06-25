@@ -122,7 +122,7 @@ bool getMISClique(graph_access &graph, std::vector<bool> &solution, bool check) 
     }
     return true;
 }
-
+constexpr int tab_node_size = 10010;
 bool canSolveClique(graph_access &graph) {
     if(graph.number_of_nodes() > tab_node_size) {
         return false;
